@@ -1,0 +1,67 @@
+<!doctype html>
+<html  lang="es">
+<head>
+	<meta charset="utf-8" />
+	<META NAME="Author" CONTENT="Steven Puerto">
+	<title>Learning C++ - Universidad Sergio Arboleda</title>
+	<link rel="shortcut icon" href="ui/img/favicon.png" />
+	<link rel="stylesheet" type= "text/css" href="ui/css\style.css">
+	<link rel="stylesheet" type= "text/css" href="ui/css\styleCurso.css">
+	<script src="ui/js/scriptDiapositivas2.js"></script>
+</head>
+<body>
+	<div id = "contenedor">
+		<!--cabecera de la pagina-->
+		<div id = "top">
+			<a href="index.html"><img id = "titulo" src="ui/img/title.png"></a>
+			<ul>
+				<li><a href="https://www.facebook.com/stevenn2012" target="_blank"><img src="ui/img/facebook.png"></a></li>
+				<li><a href="https://www.youtube.com/channel/UC9rMEh-mPd8h0rMj2Rv9qXg"  target="_blank"><img src="ui/img/youtube.png"></a></li>
+			</ul>
+		</div>
+		
+		<!--menu principal-->
+		<div id = "menu">
+			<ul>	
+				<li onMouseOver="cambiarImg(true,'home',true)" onmouseout="cambiarImg(false,'home',true)"><a href="index.html"><img id="home" src="ui/img/menu/home1.png">&nbspInicio</a></li>	
+				<li onMouseOver="cambiarImg(true,'mod',true)" onmouseout="cambiarImg(false,'mod',true)"><a href="temas.html"><img id="mod" src="ui/img/menu/mod1.png">&nbspModulos</a></li>
+				
+				<!--modulo-->
+				<li onMouseOver="cambiarImg(true,'m',true)" onmouseout="cambiarImg(false,'m',true)"><a href="modulo4.html"><img id="m" src="ui/img/menu/m1.png">&nbspModulo 4</a></li>
+
+				<!--curso-->
+				<li id="act" onMouseOver="cambiarImg(true,'e',false)" onmouseout="cambiarImg(false,'e',false)"><a href="curso10.html"><img id="e" src="ui/img/menu/e1.png">&nbspCurso 10</a></li>
+				
+				<li onMouseOver="cambiarImg(true,'quien',true)" onmouseout="cambiarImg(false,'quien',true)"><a href="quienessomos.html"><img id="quien" src="ui/img/menu/quien1.png">&nbspGlosario</a></li>
+				<li onMouseOver="cambiarImg(true,'contact',true)" onmouseout="cambiarImg(false,'contact',true)"><a href="contacto.html"><img id="contact" src="ui/img/menu/contact1.png">&nbspContactenos</a></li>
+			</ul>
+		</div>
+		
+		<!--Contenido central-->
+		<div id = "center">
+			<br>
+			<center><h1>Cuso 10</h1></center>
+			<div id = "curso">
+				<h3>Espacios de nombres</h3>
+				<br>
+				<div id = "diapositivas">
+					<center>
+						<button class = "button2" onclick="pasarDiapositiva(10,3,false,'jpg',false)"><img id = "but" src = " ui/img/back2.png"> </button>
+						<img id = "image" src = "ui/img/Galerias/Galeria10/1.jpg">
+						<button class = "button2"  onclick="pasarDiapositiva(10,3,true,'jpg',false)"><img id = "but" src = "ui/img/play2.png"></button>
+					</center>
+				</div>
+				<h5>
+					Bienvenidos a learning c++, una pagina diseñana con el objetivo de enseñar de manera didactica lo que viene siendo la programacion en c++, esta se divide en tres elementales(modulos), cada uno con tres cursos, en los cuales se ira explicando de forma detallada los pasos necesarios para convertirse en un experto a la hora de programar en dicho lenguaje. En este video introductorio se explicara brevemente su definicion, como descargarlo e como instalarlo y como configurarlo por primera vez.
+				</h5>
+			</div>
+		</div>
+
+		<!--Pie de pagina-->
+		<div id = "bot">
+			<hr>
+			<p>Copyright © 2015. Todos los derechos reservados.</p>
+		</div>
+	</div>
+</body>	
+</html>

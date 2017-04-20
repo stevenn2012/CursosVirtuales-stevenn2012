@@ -1,0 +1,81 @@
+.curso{
+	font-family: verdana;
+	font-style: normal;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 800px;
+	border: ridge;
+	border-radius: 15px;
+	border-color: #2C2C2C;
+}
+
+.curso img{
+	border-radius: 15px;
+	margin: 20px;
+	width: 350px;
+	height: 260px;
+	float: left;
+	position: relative;
+}
+
+.curso h3{
+	color:#00A3EE;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	text-align: left;
+}
+
+.curso h5{
+	font-size: 12px;
+	padding-top: 0px;	
+	margin-top:0px;
+	padding: 20px;
+	height: 200px;
+	text-align: justify;
+}
+
+.curso h5 a{
+	float: right;
+}
+
+.curso h5 a img{
+	height: 30px;
+	width: 100px;
+}
+
+.curso h5 a:link{
+	color : grey;
+    text-decoration: none;
+}
+
+.curso h5 a:visited{
+  	color : grey;
+    text-decoration: none;
+}
+
+.curso h5 a:hover{
+    color : blue;
+    text-decoration: none;
+}
+
+.curso{
+	-webkit-animation: Animacion 1.5s;
+	animation: Animacion 1.5s;
+}
+
+@-webkit-keyframes Animacion{
+	0%{
+		transform: translateZ(300px) translateY(100px) rotateX(100deg); 
+		opacity: 0;
+	}
+	100%{
+		transform: translateZ(0px) translateY(0px) rotateX(0deg); 
+		opacity: 1; 
+	}
+}
+

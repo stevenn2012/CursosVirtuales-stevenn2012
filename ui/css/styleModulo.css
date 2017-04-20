@@ -1,0 +1,100 @@
+div#curso{
+	font-family: verdana;
+	font-style: normal;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 800px;
+	border: ridge;
+	border-radius: 15px;
+	border-color: #2C2C2C;
+	
+}
+
+div#curso img{
+	border-radius: 15px;
+	margin: 20px;
+	width: 300px;
+	height: 260px;
+	float: left;
+	position: relative;
+}
+
+div#curso h3{
+	color:#00A3EE;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	text-align: left;
+}
+
+div#curso h5{
+	font-size: 12px;
+	padding-top: 0px;	
+	margin-top:0px;
+	padding: 20px;
+	height: 200px;
+	text-align: justify;
+}
+
+div#curso h5 a{
+	float: right;
+}
+
+div#curso h5 a img{
+	height: 30px;
+	width: 100px;
+}
+
+div#curso h5 a:link{
+	color : grey;
+    text-decoration: none;
+}
+
+div#curso h5 a:visited{
+  	color : grey;
+    text-decoration: none;
+}
+
+div#curso h5 a:hover{
+    color : blue;
+    text-decoration: none;
+}
+
+div#menu ul li#act{
+	-webkit-animation: Ani 0.5s;
+	animation: Ani 0.5s;
+}
+
+@-webkit-keyframes Ani{
+	0%{
+		padding-top: 0px;
+		padding-bottom: 0px;
+		opacity: 0;
+	}
+	100%{
+		padding-top: 11px;
+		padding-bottom: 4px;
+		opacity: 1; 
+	}
+}
+
+div#curso{
+	-webkit-animation: Animacion 1.5s;
+	animation: Animacion 1.5s;
+}
+
+@-webkit-keyframes Animacion{
+	0%{
+		transform: translateZ(300px) translateY(100px) rotateX(100deg); 
+		opacity: 0;
+	}
+	100%{
+		transform: translateZ(0px) translateY(0px) rotateX(0deg); 
+		opacity: 1; 
+	}
+}
+

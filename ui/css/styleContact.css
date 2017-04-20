@@ -1,0 +1,21 @@
+div#img{
+	padding-top: 35px;
+	width: 800px;
+	margin: auto;
+}
+
+img#centro{
+	padding-top: 16px;
+	padding-right: 40px;
+	border-radius: 18px;
+	width: 500px;
+	float: left;
+}
+
+h3,h4{
+	color:#00A3EE;
+}
+
+h4{
+	margin-bottom: 0px;
+}

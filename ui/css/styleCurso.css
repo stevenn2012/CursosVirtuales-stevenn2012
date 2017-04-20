@@ -1,0 +1,97 @@
+div#curso{
+	font-family: verdana;
+	font-style: normal;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 940px;
+	border: ridge;
+	border-color: black;
+	text-align: center;
+	border: none;
+}
+
+h5{
+	text-align: justify;
+	padding-top:30px;
+	padding-left: 400px;
+	padding-right: 20px;
+	margin-left: 100px;
+}
+
+video{
+	padding-top: 19px;
+}
+
+div#center h3{
+	color:#00A3EE;
+	font-size: 25px;
+}
+
+.button2{
+	outline: none;
+	border : none;
+}
+
+div#center img{
+	height: 315px;
+}
+
+div#diapositivas{
+	float: left;
+	position: relative;
+}
+
+div#diapositivas img#image{
+	width: 400px;
+}
+
+div#diapositivas img#but{
+	width: 20px;	
+}
+
+video{
+	width:400px;
+	height:315px;
+	float: left;
+	
+}
+
+div#bot{
+	margin-top: 400px;
+}
+
+div#menu ul li#act{
+	-webkit-animation: Ani 0.5s;
+	animation: Ani 0.5s;
+}
+
+@-webkit-keyframes Ani{
+	0%{
+		padding-top: 0px;
+		padding-bottom: 0px;
+		opacity: 0;
+	}
+	100%{
+		padding-top: 11px;
+		padding-bottom: 4px;
+		opacity: 1; 
+	}
+}
+
+div#curso{
+	-webkit-animation: Animacion 1.5s;
+	animation: Animacion 1.5s;
+}
+
+@-webkit-keyframes Animacion{
+	0%{
+		transform: translateZ(300px) translateY(100px) rotateX(100deg); 
+		opacity: 0;
+	}
+	100%{
+		transform: translateZ(0px) translateY(0px) rotateX(0deg); 
+		opacity: 1; 
+	}
+}

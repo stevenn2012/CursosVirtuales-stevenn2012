@@ -1,0 +1,183 @@
+<!doctype html>
+<html  lang="es">
+<head>
+	<meta charset="utf-8" />
+	<META NAME="Author" CONTENT="Steven Puerto">
+	<title>Learning C++ - Universidad Sergio Arboleda</title>
+	<link rel="shortcut icon" href="ui/img/favicon.png" />
+	<link rel="stylesheet" type= "text/css" href="ui/css\style.css">
+	<link rel="stylesheet" type= "text/css" href="ui/css\styleQuiz.css">
+	<script src="ui/js/calificar.js"></script>
+	<script src="ui/js/scriptDiapositivas2.js"></script>
+</head>
+<body>
+	<div id = "contenedor">
+		<!--cabecera de la pagina-->
+		<div id = "top">
+			<a href="index.html"><img id = "titulo" src="ui/img/title.png"></a>
+			<ul>
+				<li><a href="https://www.facebook.com/stevenn2012" target="_blank"><img src="ui/img/facebook.png"></a></li>
+				<li><a href="https://www.youtube.com/channel/UC9rMEh-mPd8h0rMj2Rv9qXg"  target="_blank"><img src="ui/img/youtube.png"></a></li>
+			</ul>
+		</div>
+		
+		<!--menu principal-->
+		<div id = "menu">
+			<ul>	
+				<li onMouseOver="cambiarImg(true,'home',true)" onmouseout="cambiarImg(false,'home',true)"><a href="index.html"><img id="home" src="ui/img/menu/home1.png">&nbspInicio</a></li>	
+				<li onMouseOver="cambiarImg(true,'mod',true)" onmouseout="cambiarImg(false,'mod',true)"><a href="temas.html"><img id="mod" src="ui/img/menu/mod1.png">&nbspModulos</a></li>
+				
+				<!--modulo-->
+				<li onMouseOver="cambiarImg(true,'m',true)" onmouseout="cambiarImg(false,'m',true)"><a href="modulo2.html"><img id="m" src="ui/img/menu/m1.png">&nbspModulo 2</a></li>
+
+				<!--curso-->
+				<li id="act" onMouseOver="cambiarImg(true,'e',false)" onmouseout="cambiarImg(false,'e',false)"><a href="Quiz2.html"><img id="e" src="ui/img/menu/e1.png">&nbspQuiz 2</a></li>
+				
+				<li onMouseOver="cambiarImg(true,'quien',true)" onmouseout="cambiarImg(false,'quien',true)"><a href="quienessomos.html"><img id="quien" src="ui/img/menu/quien1.png">&nbspGlosario</a></li>
+				<li onMouseOver="cambiarImg(true,'contact',true)" onmouseout="cambiarImg(false,'contact',true)"><a href="contacto.html"><img id="contact" src="ui/img/menu/contact1.png">&nbspContactenos</a></li>
+			</ul>
+		</div>
+		
+		<!--Contenido central-->
+		<div id = "center">
+			<br><br>
+			<div id="cont">
+				<div id="Texto">
+					<h3>Modulo2 - Quiz 2</h3>
+					<B>ahora que ha terminado todas las clases de este modulo podrá probar su aprendizaje realizando este quiz.</B><br>
+					Los tipos de preguntas son diferentes. Cada vez que responda una pregunta y esté seguro de su respuesta porfavor haga click en el boton enviar.<br><br>
+					<B>Nota: Tenga en cuenta que las preguntas sin responder se consideran como incorrectas!</B><br>
+					<br>
+				</div>
+				<fieldset>
+					<legend>Enunciado de la Primera Pregunta: <img id="image1" src="ui/img/s.png"></legend>
+					<form id="formulario1">
+						<input name="preg" type="radio"> Primera Opcion <br>
+						<input name="preg" type="radio"> Segunda Opcion <br>
+						<input name="preg" type="radio"> Tercera Opcion <br>
+						<input name="preg" type="radio"> Cuarta Opcion <br>
+					</form>
+					<br>
+					<button class="bot" id="boton1" onclick="calificar(2,1)"></button>
+				</fieldset>
+				<br>
+				<fieldset>
+					<legend>Enunciado de la Segunda Pregunta: <img id="image2" src="ui/img/s.png"></legend>
+					<form id="formulario2">	
+						<input name="preg" type="radio"> Primera Opcion <br>
+						<input name="preg" type="radio"> Segunda Opcion <br>
+						<input name="preg" type="radio"> Tercera Opcion <br>
+						<input name="preg" type="radio"> Cuarta Opcion <br>
+					</form>
+					<br>
+					<button class="bot" id="boton2" onclick="calificar(2,2)"></button>
+				</fieldset>
+				<br>
+				<fieldset>
+					<legend>Enunciado de la Tercera Pregunta: <img id="image3" src="ui/img/s.png"></legend>
+					<form id="formulario3">
+						<input name="preg" type="radio"> Primera Opcion <br>
+						<input name="preg" type="radio"> Segunda Opcion <br>
+						<input name="preg" type="radio"> Tercera Opcion <br>
+						<input name="preg" type="radio"> Cuarta Opcion <br>
+					</form>
+					<br>
+					<button class="bot" id="boton3" onclick="calificar(2,3)"></button>
+				</fieldset>
+				<br>
+				<fieldset>
+					<legend>Enunciado de la cuarta Pregunta: <img id="image4" src="ui/img/s.png"></legend>
+					<form id="formulario4">
+						<input name="preg" type="radio"> Primera Opcion <br>
+						<input name="preg" type="radio"> Segunda Opcion <br>
+						<input name="preg" type="radio"> Tercera Opcion <br>
+						<input name="preg" type="radio"> Cuarta Opcion <br>
+					</form>
+					<br>
+					<button class="bot" id="boton4" onclick="calificar(2,4)"></button>
+				</fieldset>
+				<br>
+				<fieldset>
+					<legend>Enunciado de la Quinta Pregunta: <img id="image5" src="ui/img/s.png"></legend>
+					<form id="formulario5">
+						<input name="preg" type="radio"> Primera Opcion <br>
+						<input name="preg" type="radio"> Segunda Opcion <br>
+						<input name="preg" type="radio"> Tercera Opcion <br>
+						<input name="preg" type="radio"> Cuarta Opcion <br>
+					</form>
+					<br>
+					<button class="bot" id="boton5" onclick="calificar(2,5)"></button>
+				</fieldset>
+				<br>
+				<fieldset>
+					<legend>Enunciado de la Sexta Pregunta: <img id="image6" src="ui/img/s.png"></legend>
+					<form id="formulario6">
+						<input name="preg" type="radio"> Primera Opcion <br>
+						<input name="preg" type="radio"> Segunda Opcion <br>
+						<input name="preg" type="radio"> Tercera Opcion <br>
+						<input name="preg" type="radio"> Cuarta Opcion <br>
+					</form>
+					<br>
+					<button class="bot" id="boton6" onclick="calificar(2,6)"></button>
+				</fieldset>
+				<br>
+				<fieldset>
+					<legend>Enunciado de la Septima Pregunta: <img id="image7" src="ui/img/s.png"></legend>
+					<form id="formulario7">
+						<input name="preg" type="radio"> Primera Opcion <br>
+						<input name="preg" type="radio"> Segunda Opcion <br>
+						<input name="preg" type="radio"> Tercera Opcion <br>
+						<input name="preg" type="radio"> Cuarta Opcion <br>
+					</form>
+					<br>
+					<button class="bot" id="boton7" onclick="calificar(2,7)"></button>
+				</fieldset>
+				<br>
+				<fieldset>
+					<legend>Enunciado de la Octava Pregunta: <img id="image8" src="ui/img/s.png"></legend>
+					<form id="formulario8">
+						<input name="preg" type="radio"> Primera Opcion <br>
+						<input name="preg" type="radio"> Segunda Opcion <br>
+						<input name="preg" type="radio"> Tercera Opcion <br>
+						<input name="preg" type="radio"> Cuarta Opcion <br>
+					</form>
+					<br>
+					<button class="bot" id="boton8" onclick="calificar(2,8)"></button>
+				</fieldset>
+				<br>
+				<fieldset>
+					<legend>Enunciado de la Novena Pregunta: <img id="image9" src="ui/img/s.png"></legend>
+					<form id="formulario9">
+						<input name="preg" type="radio"> Primera Opcion <br>
+						<input name="preg" type="radio"> Segunda Opcion <br>
+						<input name="preg" type="radio"> Tercera Opcion <br>
+						<input name="preg" type="radio"> Cuarta Opcion <br>
+					</form>
+					<br>
+					<button class="bot" id="boton9" onclick="calificar(2,9)"></button>
+				</fieldset>
+				<br>
+				<fieldset>
+					<legend>Enunciado de la Decima Pregunta: <img id="image10" src="ui/img/s.png"></legend>
+					<form id="formulario10">
+						<input name="preg" type="radio"> Primera Opcion <br>
+						<input name="preg" type="radio"> Segunda Opcion <br>
+						<input name="preg" type="radio"> Tercera Opcion <br>
+						<input name="preg" type="radio"> Cuarta Opcion <br>
+					</form>
+					<br>
+					<button class="bot" id="boton10" onclick="calificar(2,10)"></button>
+				</fieldset>
+			</div>
+			<br>
+			<center><button class="cal" id="verificar" onclick="ver(2)"></button></a></center>
+		</div>
+
+		<!--Pie de pagina-->
+		<div id = "bot">
+			<hr>
+			<p>Copyright © 2015. Todos los derechos reservados.</p>
+		</div>
+	</div>
+</body>	
+</html>

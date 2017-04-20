@@ -1,0 +1,119 @@
+/***titulo***/
+div#top img#titulo{
+	float: left;
+	-webkit-animation: primeraAnimacion 1s;
+	animation: primeraAnimacion 1s;
+}
+@-webkit-keyframes primeraAnimacion{0%{margin-left: -1000px;opacity: 0;}38%{opacity: 0;}100%{margin-left: 40%;opacity: 1;}}
+
+/***Galeria***/
+div#galeria{
+	margin-top: -17px;
+	height: 300px;
+	float: left;
+}
+
+div#galeria img{
+	height: 300px;
+}
+
+div#galeria img#image{
+	width: 750px;
+}
+
+div#galeria img#but{
+	width: 100px;	
+}
+
+.button2{
+	outline: none;
+	background-color:transparent; 
+	border : none;
+}
+
+/**contenido sin galeria**/
+div#cont{
+	padding-top:20px;
+}
+
+/***login***/
+div#login{
+	padding-left: 40px;
+	margin-top: 20px;
+	text-align: center;
+	float:left;
+}
+
+/***login boton ingresar***/
+div#login form input#boton{
+	width: 100px;
+	height: 30px;
+	border:none;
+	background-image: url('../img/botonIngreso.png');
+	background-repeat: no-repeat;
+}
+
+/***login enlace***/
+div#login a:link{
+    color : grey;
+    text-decoration: none;
+}
+
+div#login a:visited{
+    color : grey;
+    text-decoration: none;
+}
+
+div#login a:hover{
+    color : grey;
+    text-decoration: none;
+}
+
+/***login logo***/
+div#login img{
+	width: 150px;
+	height: 150px;
+}
+
+/***contenido central***/
+div#contenido h5{
+	padding-top: 20px;
+	text-align: justify;
+	font-family: verdana;
+	font-style: normal;
+	font-size: 13px;
+	padding-left: 205px;
+	width: 550px;
+	margin: auto;
+}
+
+div#contenido h2{
+	text-align: center;
+}
+
+/******************************************/
+
+/* Effect 4: fall perspective**/
+
+/* 
+.grid.effect-4 {
+	perspective: 1300px;
+}
+
+.grid.effect-4 {
+	transform-style: preserve-3d;
+}
+
+.grid.effect-4  div{
+	transform: translateZ(0px) translateY(0px) rotateX(0deg);
+	animation: fallPerspective .8s ease-in-out forwards;
+}
+
+@keyframes fallPerspective {
+	100% { 
+		transform: translateZ(0px) translateY(0px) rotateX(0deg); 
+		opacity: 1; 
+	}
+}
+*/
+

@@ -1,0 +1,44 @@
+div#cont{
+	width: 800px;
+	margin:auto;
+}
+
+button{
+	border-radius: 5px 5px 5px 5px;
+	outline: none;
+}
+h3{
+	text-align: center;
+	color:#00A3EE;
+	font-size: 34px;
+}
+
+fieldset{
+	border: ridge;
+	border-radius: 15px;
+	border-color: #2C2C2C;
+}
+
+legend{
+	color:#00A3EE;
+	font-size: 15px;
+}
+
+button#verificar{
+	background-color: white;
+	height: 30px;
+	width: 100px;
+}
+
+.bot{
+	background-image: url('../img/enviar.png');
+	height: 30px;
+	width: 100px;
+	border-color: black;
+}
+
+.cal{
+	background-image: url('../img/calificar.png');
+	height: 30px;
+	width: 100px;
+}

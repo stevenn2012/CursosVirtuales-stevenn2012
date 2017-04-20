@@ -1,0 +1,139 @@
+<!doctype html>
+<html  lang="es">
+<head>
+
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+	<META NAME="Author" CONTENT="Steven Puerto">
+	<title>Learning C++ - Universidad Sergio Arboleda</title>
+	<link rel="shortcut icon" href="ui/img/favicon.png" />
+	<link rel="stylesheet" type= "text/css" href="ui/css/style.css">
+	<link rel="stylesheet" type= "text/css" href="ui/css/styleIndex.css">
+	<link rel="stylesheet" type="text/css" href="ui/css/style3.css" />
+	<script src="ui/js/scriptDiapositivas.js"></script>
+	<meta http-equiv="X-UA-Compatible" content="IE=7"> 
+</head>
+<body>
+	<div id = "contenedor">
+		<!--cabecera de la pagina-->
+		<div id = "top">
+			<a href="index.html"><img id = "titulo" src="ui/img/title.png"></a>
+			<ul>
+				<li ><a href="https://www.facebook.com/stevenn2012" target="_blank"><img src="ui/img/facebook.png"></a></li>
+				<li><a href="https://www.youtube.com/channel/UC9rMEh-mPd8h0rMj2Rv9qXg"  target="_blank"><img src="ui/img/youtube.png"></a></li>
+			</ul>
+		</div>
+		
+		<!--menu principal-->
+		<div id = "menu">
+			<ul>	
+				<li id="act" onMouseOver="cambiarImg(true,'home',false)" onmouseout="cambiarImg(false,'home',false)"><a href="index.html"><img id="home" src="ui/img/menu/home1.png">&nbspInicio</a></li>	
+				<li onMouseOver="cambiarImg(true,'mod',true)" onmouseout="cambiarImg(false,'mod',true)"><a href="temas.html"><img id="mod" src="ui/img/menu/mod1.png">&nbspModulos</a></li>			
+				<li onMouseOver="cambiarImg(true,'quien',true)" onmouseout="cambiarImg(false,'quien',true)"><a href="quienessomos.html"><img id="quien" src="ui/img/menu/quien1.png">&nbspGlosario</a></li>
+				<li onMouseOver="cambiarImg(true,'contact',true)" onmouseout="cambiarImg(false,'contact',true)"><a href="contacto.html"><img id="contact" src="ui/img/menu/contact1.png">&nbspContactenos</a></li>
+			</ul>
+		</div>
+		<!--Contenido central-->
+		<div id = "center">
+
+			<!--galeria index-->
+			<div id = "galeria">
+				<section class="cr-container">
+					<input id="select-img-1" name="radio-set-1" type="radio" class="cr-selector-img-1" checked/>
+					<label for="select-img-1" class="cr-label-img-1"></label>
+					
+					<input id="select-img-2" name="radio-set-1" type="radio" class="cr-selector-img-2" />
+					<label for="select-img-2" class="cr-label-img-2"></label>
+					
+					<input id="select-img-3" name="radio-set-1" type="radio" class="cr-selector-img-3" />
+					<label for="select-img-3" class="cr-label-img-3"></label>
+					
+					<input id="select-img-4" name="radio-set-1" type="radio" class="cr-selector-img-4" />
+					<label for="select-img-4" class="cr-label-img-4"></label>
+					
+					<div class="clr"></div>	
+					<div class="cr-bgimg">
+						<div>
+							<span>Slice 1 - Image 1</span>
+							<span>Slice 1 - Image 2</span>
+							<span>Slice 1 - Image 3</span>
+							<span>Slice 1 - Image 4</span>
+						</div>
+						<div>
+							<span>Slice 2 - Image 1</span>
+							<span>Slice 2 - Image 2</span>
+							<span>Slice 2 - Image 3</span>
+							<span>Slice 2 - Image 4</span>
+						</div>
+						<div>
+							<span>Slice 3 - Image 1</span>
+							<span>Slice 3 - Image 2</span>
+							<span>Slice 3 - Image 3</span>
+							<span>Slice 3 - Image 4</span>
+						</div>
+						<div>
+							<span>Slice 4 - Image 1</span>
+							<span>Slice 4 - Image 2</span>
+							<span>Slice 4 - Image 3</span>
+							<span>Slice 4 - Image 4</span>
+						</div>
+					</div>
+					<div class="cr-titles">
+						<h3><span> Bienvenido </span><span> a Lerning C++</span></h3>
+						<h3><span> Encontraras </span><span> Los mejores cursos de C++ </span></h3>
+						<h3><span> Cursos</span><span>explicados con Videos Y diapositivas </span></h3>
+						<h3><span> Con reconocimiento</span><span> a travez de un diploma </span></h3>
+					</div>
+				</section>
+			</div>
+			<div id="stop"></div>
+			<!--contenido de la pagina-->
+			<div id = "cont">
+
+				<!--panel de ingreso-->
+				<div id = "login"> 
+					<p>Inicio de sesión</p>
+					<form>
+	 					<h5>Ingrese su Nombre</h5>
+					 	<input name="nombre" type="text" value=""></input>
+					</form>
+					<form>
+	 					<h5>Ingrese su Contraseña</h5>
+					 	<input name="nombre" type="password" value=""></input>
+					</form>
+					<br>
+					<form>
+						<input id = "boton" name="boton" type="submit" value=""></input>
+					</form>
+					<a href="index.html"><h6>No esta registrado?</h6></a>
+					<th><img src="ui/img/logo.png"></th>
+				</div>
+
+				<!--contenido general-->
+				<div id = "contenido">
+					<h2>Learning C++</h2>
+					<center>
+						<video id = "vid" width="560" height="315" poster="ui/img/poster1.jpg" preload="auto" autostart="False" controls>
+							<source src="ui/img/vid/0.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+	 						<source src="ui/img/vid/0.wmv" type='video/ogg; codecs="theora, vorbis"'>	
+	  						Your browser does not support the video tag.
+						</video>
+					</center>
+					<h5>Bienvenidos a learning c++, una pagina diseñana con el objetivo de enseñar de manera didactica lo que viene siendo la programacion en c++, esta se divide en tres elementales(modulos), cada uno con tres cursos, en los cuales se ira explicando de forma detallada los pasos necesarios para convertirse en un experto a la hora de programar en dicho lenguaje.
+					En este video introductorio se explicara brevemente su definicion, como descargarlo e como instalarlo y como configurarlo por primera vez.
+					</h5>
+				</div>
+			</div>
+		</div>
+
+		<!--Pie de pagina-->
+		<div id = "bot">
+			<hr>
+			<p>Copyright © 2015. Todos los derechos reservados.</p>
+		</div>
+	</div>
+</body>	
+</html>
+
+
+<!--http://www.flaticon.com/free-icon/help-bubble_64514-->

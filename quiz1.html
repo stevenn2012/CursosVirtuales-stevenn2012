@@ -1,0 +1,183 @@
+<!doctype html>
+<html  lang="es">
+<head>
+	<meta charset="utf-8" />
+	<META NAME="Author" CONTENT="Steven Puerto">
+	<title>Learning C++ - Universidad Sergio Arboleda</title>
+	<link rel="shortcut icon" href="ui/img/favicon.png" />
+	<link rel="stylesheet" type= "text/css" href="ui/css\style.css">
+	<link rel="stylesheet" type= "text/css" href="ui/css\styleQuiz.css">
+	<script src="ui/js/calificar.js"></script>
+	<script src="ui/js/scriptDiapositivas2.js"></script>
+</head>
+<body>
+	<div id = "contenedor">
+		<!--cabecera de la pagina-->
+		<div id = "top">
+			<a href="index.html"><img id = "titulo" src="ui/img/title.png"></a>
+			<ul>
+				<li><a href="https://www.facebook.com/stevenn2012" target="_blank"><img src="ui/img/facebook.png"></a></li>
+				<li><a href="https://www.youtube.com/channel/UC9rMEh-mPd8h0rMj2Rv9qXg"  target="_blank"><img src="ui/img/youtube.png"></a></li>
+			</ul>
+		</div>
+		
+		<!--menu principal-->
+		<div id = "menu">
+			<ul>	
+				<li onMouseOver="cambiarImg(true,'home',true)" onmouseout="cambiarImg(false,'home',true)"><a href="index.html"><img id="home" src="ui/img/menu/home1.png">&nbspInicio</a></li>	
+				<li onMouseOver="cambiarImg(true,'mod',true)" onmouseout="cambiarImg(false,'mod',true)"><a href="temas.html"><img id="mod" src="ui/img/menu/mod1.png">&nbspModulos</a></li>
+				
+				<!--modulo-->
+				<li onMouseOver="cambiarImg(true,'m',true)" onmouseout="cambiarImg(false,'m',true)"><a href="modulo1.html"><img id="m" src="ui/img/menu/m1.png">&nbspModulo 1</a></li>
+
+				<!--curso-->
+				<li id="act" onMouseOver="cambiarImg(true,'e',false)" onmouseout="cambiarImg(false,'e',false)"><a href="Quiz1.html"><img id="e" src="ui/img/menu/e1.png">&nbspQuiz 1</a></li>
+				
+				<li onMouseOver="cambiarImg(true,'quien',true)" onmouseout="cambiarImg(false,'quien',true)"><a href="quienessomos.html"><img id="quien" src="ui/img/menu/quien1.png">&nbspGlosario</a></li>
+				<li onMouseOver="cambiarImg(true,'contact',true)" onmouseout="cambiarImg(false,'contact',true)"><a href="contacto.html"><img id="contact" src="ui/img/menu/contact1.png">&nbspContactenos</a></li>
+			</ul>
+		</div>
+		
+		<!--Contenido central-->
+		<div id = "center">
+			<br><br>
+			<div id="cont">
+				<div id="Texto">
+					<h3>Modulo1 - Quiz 1</h3>
+					<B>ahora que ha terminado todas las clases de este modulo podrá probar su aprendizaje realizando este quiz.</B><br>
+					Los tipos de preguntas son diferentes. Cada vez que responda una pregunta y esté seguro de su respuesta porfavor haga click en el boton enviar.<br><br>
+					<B>Nota: Tenga en cuenta que las preguntas sin responder se consideran como incorrectas!</B><br>
+					<br>
+				</div>
+				<fieldset>
+					<legend>1.¿Cuál de las siguientes opciones no ofrece el menú de herramientas?: <img id="image1" src="ui/img/s.png"></legend>
+					<form id="formulario1">
+						<input name="preg" type="radio"> Crear un nuevo poryecto <br>
+						<input name="preg" type="radio"> crear un nuevo código fuente <br>
+						<input name="preg" type="radio"> crear hoja en blanco <br>
+						<input name="preg" type="radio"> compilar <br>
+					</form>
+					<br>
+					<button class="bot" id="boton1" onclick="calificar(1,1)"></button>
+				</fieldset>
+				<br>
+				<fieldset>
+					<legend>2.¿Cómo se llama el método que proporciona la librería stdlib.h  para imprimir?: <img id="image2" src="ui/img/s.png"></legend>
+					<form id="formulario2">	
+						<input name="preg" type="radio"> Cout <br>
+						<input name="preg" type="radio"> printf <br>
+						<input name="preg" type="radio"> imprimir <br>
+						<input name="preg" type="radio"> write <br>
+					</form>
+					<br>
+					<button class="bot" id="boton2" onclick="calificar(1,2)"></button>
+				</fieldset>
+				<br>
+				<fieldset>
+					<legend>3.¿Cuáles métodos se usaron para que la consola no se cerrara automáticamente?: <img id="image3" src="ui/img/s.png"></legend>
+					<form id="formulario3">
+						<input name="preg" type="radio"> System(“PAUSA”)/getch() <br>
+						<input name="preg" type="radio"> System(“PAUSA”)/ get.sin() <br>
+						<input name="preg" type="radio"> getch() / get.sin() <br>
+						<input name="preg" type="radio"> ninguno de los anteriores <br>
+					</form>
+					<br>
+					<button class="bot" id="boton3" onclick="calificar(1,3)"></button>
+				</fieldset>
+				<br>
+				<fieldset>
+					<legend>4.¿Cómo se llama el método de lectura proporcionado por el espacio de nombre, std?: <img id="image4" src="ui/img/s.png"></legend>
+					<form id="formulario4">
+						<input name="preg" type="radio"> Cout <br>
+						<input name="preg" type="radio"> leer <br>
+						<input name="preg" type="radio"> read <br>
+						<input name="preg" type="radio"> cin <br>
+					</form>
+					<br>
+					<button class="bot" id="boton4" onclick="calificar(1,4)"></button>
+				</fieldset>
+				<br>
+				<fieldset>
+					<legend>5.¿Cuál es la cantidad de valores que acepta el tipo de variable  double?: <img id="image5" src="ui/img/s.png"></legend>
+					<form id="formulario5">
+						<input name="preg" type="radio"> 10^-30 a 10^30 <br>
+						<input name="preg" type="radio"> 10^-308 a 10^308 <br>
+						<input name="preg" type="radio"> 10^-35 a 10^35 <br>
+						<input name="preg" type="radio"> 10^-350 a 10^350 <br>
+					</form>
+					<br>
+					<button class="bot" id="boton5" onclick="calificar(1,5)"></button>
+				</fieldset>
+				<br>
+				<fieldset>
+					<legend>6.¿Qué pasa si intento reasignar un valor a una constante?: <img id="image6" src="ui/img/s.png"></legend>
+					<form id="formulario6">
+						<input name="preg" type="radio"> Nada <br>
+						<input name="preg" type="radio"> Se reasigna el valor <br>
+						<input name="preg" type="radio"> Se genera un error  <br>
+						<input name="preg" type="radio"> Ninguna de las anteriores  <br>
+					</form>
+					<br>
+					<button class="bot" id="boton6" onclick="calificar(1,6)"></button>
+				</fieldset>
+				<br>
+				<fieldset>
+					<legend>7.¿Cómo se llaman los operadores que me permiten evaluar más de una condición?: <img id="image7" src="ui/img/s.png"></legend>
+					<form id="formulario7">
+						<input name="preg" type="radio"> Operadores básicos   <br>
+						<input name="preg" type="radio"> Operadores de comparación  <br>
+						<input name="preg" type="radio"> Operadores dobles   <br>
+						<input name="preg" type="radio"> Operadores lógicos  <br>
+					</form>
+					<br>
+					<button class="bot" id="boton7" onclick="calificar(1,7)"></button>
+				</fieldset>
+				<br>
+				<fieldset>
+					<legend>8.¿Qué se usa para romper los casos en el switch case?: <img id="image8" src="ui/img/s.png"></legend>
+					<form id="formulario8">
+						<input name="preg" type="radio"> End<br>
+						<input name="preg" type="radio"> Endl  <br>
+						<input name="preg" type="radio"> Break <br>
+						<input name="preg" type="radio"> \n <br>
+					</form>
+					<br>
+					<button class="bot" id="boton8" onclick="calificar(1,8)"></button>
+				</fieldset>
+				<br>
+				<fieldset>
+					<legend>9.¿Cuál es el símbolo del operador lógico que voltea el resultado?: <img id="image9" src="ui/img/s.png"></legend>
+					<form id="formulario9">
+						<input name="preg" type="radio"> ! <br>
+						<input name="preg" type="radio"> & <br>
+						<input name="preg" type="radio"> % <br>
+						<input name="preg" type="radio"> ¡ <br>
+					</form>
+					<br>
+					<button class="bot" id="boton9" onclick="calificar(1,9)"></button>
+				</fieldset>
+				<br>
+				<fieldset>
+					<legend>10.¿Cómo se llama la forma del if que realiza una operación en caso de que no se cumpla la condición inicial?: <img id="image10" src="ui/img/s.png"></legend>
+					<form id="formulario10">
+						<input name="preg" type="radio"> Else if  <br>
+						<input name="preg" type="radio"> If alternative <br>
+						<input name="preg" type="radio"> Switch case  <br>
+						<input name="preg" type="radio"> Else <br>
+					</form>
+					<br>
+					<button class="bot" id="boton10" onclick="calificar(1,10)"></button>
+				</fieldset>
+			</div>
+			<br>
+			<center><button class="cal" id="verificar" onclick="ver(1)"></button></a></center>
+		</div>
+
+		<!--Pie de pagina-->
+		<div id = "bot">
+			<hr>
+			<p>Copyright © 2015. Todos los derechos reservados.</p>
+		</div>
+	</div>
+</body>	
+</html>

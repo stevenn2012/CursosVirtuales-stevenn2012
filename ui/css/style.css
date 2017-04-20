@@ -1,0 +1,144 @@
+body{
+	margin: 0px;
+	font-size: 15px;
+	font-style: oblique;
+	font-family: arial;
+	color:white;
+	background-color: #131313;
+}
+
+/****contenedor general****/
+div#contenedor{
+	background-color: black;
+	width: 1000px;
+	margin: auto;
+	box-shadow: 4px 4px 8px #000000;
+}
+
+/***cabecera de la pagina***/
+div#top{
+	height: 185px;
+	background-image: url('../img/fondo.jpg');
+	background-repeat: no-repeat;
+	
+}
+
+/***titulo***/
+div#top img#titulo{
+	margin-left: 40%;
+	float: left;
+}
+
+/****redes sociales***/
+div#top ul{
+	margin-top: 150px;
+	float: right;
+	padding-right: 25px;
+	padding-bottom: 0px;
+}
+
+div#top ul li a img{
+	width: 30px;
+	height: 30px;
+
+}
+
+div#top ul li{
+	display: inline;
+	padding : 1px;
+}
+
+/****Menu Principal****/
+div#menu{
+	padding-top: 1px;
+	padding-bottom: 4px;
+	background-color: #222222;
+}
+
+div#menu ul{
+    height: 5px;
+    padding-left: 4px;
+}
+
+/**menu inactivo**/
+div#menu ul li:hover {
+	background-color: white;
+	padding-top: 18px;
+}
+
+div#menu ul li:hover a:link{
+	color : black;
+}
+
+div#menu ul li:hover a:visited{
+    color : black;
+    text-decoration: none;
+}
+
+/**menu activo**/
+div#menu ul li#act:hover a:link{
+	color : white;
+}
+
+div#menu ul li#act:hover a:visited{
+    color : white;
+    text-decoration: none;
+}
+
+div#menu ul li#act{
+	background-color: black;
+}
+
+div#menu ul li img{
+	height: 18px;
+	width: 18px;
+}
+
+div#menu ul li{
+	font-style: normal;
+	display: inline;
+	padding-top: 11px;
+	padding-bottom: 4px;
+	padding-left: 30px;
+	padding-right: 30px;
+	background-color: #353535;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	box-shadow: 4px 4px 8px #000000;
+}
+
+div#menu ul li a:link{
+    color : white;
+    text-decoration: none;
+}
+
+div#menu ul li a:visited{
+    color : white;
+    text-decoration: none;
+}
+
+div#menu ul li a:hover{
+    color : grey;
+    text-decoration: none;
+}
+
+/****pie de pagina****/
+div#bot{
+	padding-top: 50px;
+	clear: both;
+	font-style: oblique;
+	color:#CDCDCD;
+	text-align: center;
+	height: 80px;
+}
+
+/**eliminar flotante**/
+div#stop{
+	clear: both;
+}
+
+.e{
+padding: 0px;
+margin: 0px;
+
+}
